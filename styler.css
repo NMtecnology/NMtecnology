@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(1.jpg);
+    opacity: 0.9;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    z-index: 99;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: x-large;
+    padding: 10px;
+    text-align: center;
+    background-color: blue;
+    border-radius: 45px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+    border: 1px wheat solid;
+    margin: 10px;
+}
+
+header>h1 {
+    padding: 10px;
+    color: black;
+    font-size: 50px;
+    border: 2px blue solid;
+    border-radius: 45px;
+    background-color: white;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    font-size: x-large;
+    border: 2px blueviolet solid;
+    padding: 10px;
+}
+
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+.infotienda {
+    display: inline;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.gridInformacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    flex-direction: row;
+    margin: 50px;
+
+}
+
+.ropa {
+    margin-right: 100px;
+}
+
+.cazzados {
+    margin-left: 100px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 50px;
+}
+
+.conImg {
+    width: 200px;
+    height: 200px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 15px;
+}
+
+.productos>.contentinfo {
+    width: 300px;
+    height: 300px;
+}
+
+.productos>.contentinfo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
